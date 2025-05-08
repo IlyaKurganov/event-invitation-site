@@ -66,11 +66,16 @@ const Index = () => {
                 </div>
               </div>
             </div>
+            <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfmM8QOmYsHjFoe39n5ZXhNHYmb0PxC9VEMJkp7Vf1Vpzduig/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
             <Button 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfmM8QOmYsHjFoe39n5ZXhNHYmb0PxC9VEMJkp7Vf1Vpzduig/viewform"
               className="bg-[#AE4A84] hover:bg-[#94366E] text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all">
               Зарегистрироваться на семинар
             </Button>
+            </a>  
           </div>
         </div>
       </section>
@@ -280,11 +285,17 @@ const Index = () => {
               </div>
 
               <div className="space-y-6">
+                <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfmM8QOmYsHjFoe39n5ZXhNHYmb0PxC9VEMJkp7Vf1Vpzduig/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
                 <Button 
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfmM8QOmYsHjFoe39n5ZXhNHYmb0PxC9VEMJkp7Vf1Vpzduig/viewform"
                   className="w-full md:w-2/3 mx-auto bg-[#AE4A84] hover:bg-[#94366E] text-white py-6 text-lg shadow-lg hover:shadow-xl transition-all">
                   Записаться на семинар
                 </Button>
+                  </a>>
 
                 <p className="mt-6 text-gray-600">
                   Или позвоните нам для регистрации:{" "}
