@@ -53,7 +53,7 @@ const Index = () => {
                     className="h-10 w-10 text-[#AE4A84] mb-2"
                   />
                   <p className="text-gray-800 font-semibold">г. Москва</p>
-                  <p className="text-gray-600">ул. Спартаковская, 6, стр.1</p>
+                  <p className="text-gray-600">ул. Спартаковская, 6, стр.1 (м. Бауманская)</p>
                 </div>
                 <div className="hidden md:block h-16 w-px bg-gray-200"></div>
                 <div className="flex flex-col items-center">
