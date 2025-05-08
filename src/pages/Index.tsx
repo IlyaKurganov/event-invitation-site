@@ -267,96 +267,32 @@ const Index = () => {
       <section className="py-16 bg-gradient-to-b from-[#F5F5F7] to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-xl shadow-md p-8 border border-gray-100">
-              <h2 className="font-playfair text-3xl font-bold text-center mb-2 text-[#2A2A2A]">
+            <div className="bg-white rounded-xl shadow-md p-8 border border-gray-100 text-center">
+              <h2 className="font-inter text-3xl font-bold text-center mb-2 text-[#2A2A2A]">
                 Регистрация <span className="text-[#AE4A84]">на семинар</span>
               </h2>
-              <p className="text-center text-gray-600 mb-8">
-                Участие бесплатное, количество мест ограничено
-              </p>
 
-              {/* Form Placeholder - Would be replaced with actual form */}
-              <div className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                      Имя
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#AE4A84] focus:border-transparent"
-                      placeholder="Ваше имя"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                      Фамилия
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#AE4A84] focus:border-transparent"
-                      placeholder="Ваша фамилия"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Телефон
-                  </label>
-                  <input
-                    type="tel"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#AE4A84] focus:border-transparent"
-                    placeholder="+7 (___) ___-__-__"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#AE4A84] focus:border-transparent"
-                    placeholder="example@email.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Специализация
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#AE4A84] focus:border-transparent"
-                    placeholder="Косметолог, дерматолог, ..."
-                  />
-                </div>
-                <div className="flex items-start mt-4">
-                  <input
-                    type="checkbox"
-                    id="consent"
-                    className="mt-1 focus:ring-[#AE4A84] h-4 w-4 text-[#AE4A84] border-gray-300 rounded"
-                  />
-                  <label
-                    htmlFor="consent"
-                    className="ml-2 block text-sm text-gray-600"
+              <div className="bg-[#F5F5F7] rounded-lg p-4 mb-8 inline-block">
+                <p className="text-[#AE4A84] font-bold text-xl">
+                  Участие бесплатное
+                </p>
+                <p className="text-gray-600">Количество мест ограничено</p>
+              </div>
+
+              <div className="space-y-6">
+                <Button className="w-full md:w-2/3 mx-auto bg-[#AE4A84] hover:bg-[#94366E] text-white py-6 text-lg shadow-lg hover:shadow-xl transition-all">
+                  Записаться на семинар
+                </Button>
+
+                <p className="mt-6 text-gray-600">
+                  Или позвоните нам для регистрации:{" "}
+                  <a
+                    href="tel:89223060673"
+                    className="font-bold text-[#AE4A84]"
                   >
-                    Я согласен с обработкой персональных данных и получением
-                    информационных материалов
-                  </label>
-                </div>
-                <div className="text-center mt-6">
-                  <Button className="w-full bg-[#AE4A84] hover:bg-[#94366E] text-white py-6 text-lg">
-                    Зарегистрироваться
-                  </Button>
-                  <p className="mt-4 text-gray-600 text-sm">
-                    Или позвоните нам для регистрации:{" "}
-                    <a
-                      href="tel:89223060673"
-                      className="font-bold text-[#AE4A84]"
-                    >
-                      8 (922) 306-06-73
-                    </a>
-                  </p>
-                </div>
+                    8 (922) 306-06-73
+                  </a>
+                </p>
               </div>
             </div>
           </div>
