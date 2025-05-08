@@ -295,7 +295,7 @@ const Index = () => {
                   className="w-full md:w-2/3 mx-auto bg-[#AE4A84] hover:bg-[#94366E] text-white py-6 text-lg shadow-lg hover:shadow-xl transition-all">
                   Записаться на семинар
                 </Button>
-                  </a>>
+                  </a>
 
                 <p className="mt-6 text-gray-600">
                   Или позвоните нам для регистрации:{" "}
