@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import Icon from "@/components/ui/icon";
-import EventCountdown from "@/components/EventCountdown";
 
 const Index = () => {
   return (
@@ -69,7 +68,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <EventCountdown />
             <Button className="bg-[#AE4A84] hover:bg-[#94366E] text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all">
               Зарегистрироваться на семинар
             </Button>
