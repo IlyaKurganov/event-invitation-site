@@ -256,10 +256,16 @@ const Index = () => {
                     </p>
                   </div>
                   <div className="mt-4 md:mt-0">
+                    <a
+                    href="https://yandex.ru/maps/-/CHr8QCOi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
                     <Button className="bg-[#AE4A84] hover:bg-[#94366E] text-white">
                       <Icon name="Navigation" className="mr-2 h-4 w-4" />
                       Построить маршрут
                     </Button>
+                      </a>
                   </div>
                 </div>
               </div>
