@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,30 +10,21 @@ const Index = () => {
     <div className="min-h-screen bg-[#F5F5F7]">
       {/* Header Section */}
       <header className="bg-white shadow-sm">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center mb-4 md:mb-0">
-              <img
-                src="https://cdn.poehali.dev/files/0c6ac02f-7393-4637-a3f4-3658a136e5f4.svg"
-                alt="FORMA Logo"
-                className="h-12 mr-2"
-              />
-            </div>
-            <div className="flex items-center space-x-6">
-              <img
-                src="https://cdn.poehali.dev/files/96f8912d-4b78-4ba5-845e-f0a7acc33da1.png"
-                alt="MiraLine Logo"
-                className="h-10"
-              />
-              <img
-                src="https://cdn.poehali.dev/files/b2636e32-71b8-41ce-97ea-fdc1e80bd2ba.png"
-                alt="LOTOS UNITED Logo"
-                className="h-10"
-              />
-              <Button className="bg-[#AE4A84] hover:bg-[#94366E] text-white">
-                Записаться
-              </Button>
-            </div>
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <div className="flex items-center">
+            <img 
+              src="/forma-logo.png" 
+              alt="FORMA Logo" 
+              className="h-12 mr-2" 
+              onError={(e) => {
+                e.currentTarget.src = "https://via.placeholder.com/120x50?text=FORMA";
+              }}
+            />
+          </div>
+          <div>
+            <Button className="bg-[#AE4A84] hover:bg-[#94366E] text-white">
+              Записаться
+            </Button>
           </div>
         </div>
       </header>
@@ -50,28 +42,19 @@ const Index = () => {
             <div className="bg-white rounded-xl shadow-md p-6 mb-8">
               <div className="flex flex-col md:flex-row justify-around items-center text-center gap-4">
                 <div className="flex flex-col items-center">
-                  <Icon
-                    name="Calendar"
-                    className="h-10 w-10 text-[#AE4A84] mb-2"
-                  />
+                  <Icon name="Calendar" className="h-10 w-10 text-[#AE4A84] mb-2" />
                   <p className="text-gray-800 font-semibold">19 мая</p>
                   <p className="text-gray-600">10:30</p>
                 </div>
                 <div className="hidden md:block h-16 w-px bg-gray-200"></div>
                 <div className="flex flex-col items-center">
-                  <Icon
-                    name="MapPin"
-                    className="h-10 w-10 text-[#AE4A84] mb-2"
-                  />
+                  <Icon name="MapPin" className="h-10 w-10 text-[#AE4A84] mb-2" />
                   <p className="text-gray-800 font-semibold">г. Москва</p>
                   <p className="text-gray-600">ул. Спартаковская, 6, стр.1</p>
                 </div>
                 <div className="hidden md:block h-16 w-px bg-gray-200"></div>
                 <div className="flex flex-col items-center">
-                  <Icon
-                    name="Building"
-                    className="h-10 w-10 text-[#AE4A84] mb-2"
-                  />
+                  <Icon name="Building" className="h-10 w-10 text-[#AE4A84] mb-2" />
                   <p className="text-gray-800 font-semibold">Учебный центр</p>
                   <p className="text-gray-600">FORMA</p>
                 </div>
@@ -91,16 +74,15 @@ const Index = () => {
             <h2 className="font-playfair text-3xl font-bold text-center mb-12 text-[#2A2A2A]">
               Спикер <span className="text-[#AE4A84]">мероприятия</span>
             </h2>
-
+            
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="md:w-1/3">
-                <img
-                  src="/speaker.jpg"
-                  alt="Елена Разумовская"
+                <img 
+                  src="/speaker.jpg" 
+                  alt="Елена Разумовская" 
                   className="rounded-xl shadow-md w-full max-w-sm mx-auto"
                   onError={(e) => {
-                    e.currentTarget.src =
-                      "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRvY3RvcnxlbnwwfHwwfHx8MA%3D%3D";
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRvY3RvcnxlbnwwfHwwfHx8MA%3D%3D";
                   }}
                 />
               </div>
@@ -110,44 +92,28 @@ const Index = () => {
                 </h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
-                    <Icon
-                      name="CheckCircle"
-                      className="h-5 w-5 text-[#AE4A84] mr-2 mt-1 flex-shrink-0"
-                    />
+                    <Icon name="CheckCircle" className="h-5 w-5 text-[#AE4A84] mr-2 mt-1 flex-shrink-0" />
                     <span>Врач-косметолог, пластический хирург</span>
                   </li>
                   <li className="flex items-start">
-                    <Icon
-                      name="CheckCircle"
-                      className="h-5 w-5 text-[#AE4A84] mr-2 mt-1 flex-shrink-0"
-                    />
+                    <Icon name="CheckCircle" className="h-5 w-5 text-[#AE4A84] mr-2 mt-1 flex-shrink-0" />
                     <span>Главный врач клиники «Ренессанс-Косметология»</span>
                   </li>
                   <li className="flex items-start">
-                    <Icon
-                      name="CheckCircle"
-                      className="h-5 w-5 text-[#AE4A84] mr-2 mt-1 flex-shrink-0"
-                    />
-                    <span>
-                      Член Экспертного Совета по ботулинотерапии, ОПРЭХ, ISPAS,
-                      ОСЭМ, EADV
-                    </span>
+                    <Icon name="CheckCircle" className="h-5 w-5 text-[#AE4A84] mr-2 mt-1 flex-shrink-0" />
+                    <span>Член Экспертного Совета по ботулинотерапии, ОПРЭХ, ISPAS, ОСЭМ, EADV</span>
                   </li>
                   <li className="flex items-start">
-                    <Icon
-                      name="CheckCircle"
-                      className="h-5 w-5 text-[#AE4A84] mr-2 mt-1 flex-shrink-0"
-                    />
+                    <Icon name="CheckCircle" className="h-5 w-5 text-[#AE4A84] mr-2 mt-1 flex-shrink-0" />
                     <span>Эксперт LOTOS UNITED</span>
                   </li>
                 </ul>
                 <Separator className="my-4" />
                 <p className="text-gray-600 italic">
-                  "Современная косметология требует комплексного подхода и
-                  глубокого понимания анатомических особенностей каждого
-                  пациента. На семинаре мы рассмотрим инновационные методики и
-                  алгоритмы, которые помогут повысить эффективность ваших
-                  процедур."
+                  "Современная косметология требует комплексного подхода и глубокого понимания
+                  анатомических особенностей каждого пациента. На семинаре мы рассмотрим
+                  инновационные методики и алгоритмы, которые помогут повысить эффективность 
+                  ваших процедур."
                 </p>
               </div>
             </div>
@@ -163,8 +129,7 @@ const Index = () => {
               Особенности <span className="text-[#AE4A84]">программы</span>
             </h2>
             <p className="text-center text-lg text-gray-600 mb-12">
-              Применение препаратов MIRALINE и технология MFU - ULTIGHT в
-              протоколах
+              Применение препаратов MIRALINE и технология MFU - ULTIGHT в протоколах
             </p>
 
             <div className="grid md:grid-cols-3 gap-6">
@@ -172,26 +137,20 @@ const Index = () => {
                 {
                   title: "ROCKSTAR - BEAUTY",
                   icon: "Sparkles",
-                  description:
-                    "Инновационные протоколы для естественного омоложения кожи",
+                  description: "Инновационные протоколы для естественного омоложения кожи"
                 },
                 {
                   title: "ROCKSTAR - LIFT",
                   icon: "ArrowUp",
-                  description:
-                    "Передовые техники для нехирургического лифтинга тканей",
+                  description: "Передовые техники для нехирургического лифтинга тканей"
                 },
                 {
                   title: "ROCKSTAR - SLIM",
                   icon: "Scissors",
-                  description:
-                    "Эффективное моделирование овала лица при разных морфотипах",
-                },
+                  description: "Эффективное моделирование овала лица при разных морфотипах"
+                }
               ].map((item, index) => (
-                <Card
-                  key={index}
-                  className="border-none hover:shadow-lg transition-all"
-                >
+                <Card key={index} className="border-none hover:shadow-lg transition-all">
                   <CardContent className="p-6 text-center">
                     <div className="h-16 w-16 bg-[#AE4A84] text-white rounded-full flex items-center justify-center mx-auto mb-4">
                       <Icon name={item.icon} className="h-8 w-8" />
@@ -199,12 +158,14 @@ const Index = () => {
                     <h3 className="font-playfair text-xl font-bold mb-3 text-[#2A2A2A]">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600">{item.description}</p>
+                    <p className="text-gray-600">
+                      {item.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
             </div>
-
+            
             <div className="mt-12 text-center">
               <p className="text-gray-700 mb-4">
                 Детальный разбор протоколов при разных морфотипах старения
@@ -231,31 +192,26 @@ const Index = () => {
 
             <div className="bg-[#F5F5F7] rounded-xl overflow-hidden shadow-md">
               <div className="h-80 bg-gray-300 relative">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.960752286405!2d37.67557047775533!3d55.770567096668616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a67047fb975%3A0x4e08a93604a8f1b1!2z0KHQv9Cw0YDRgtCw0LrQvtCy0YHQutCw0Y8g0YPQuy4sIDYg0YHRgtGA0L7QtdC90LjQtSAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA1MDgy!5e0!3m2!1sru!2s!4v1715170845979!5m2!1sru!2s"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.960752286405!2d37.67557047775533!3d55.770567096668616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a67047fb975%3A0x4e08a93604a8f1b1!2z0KHQv9Cw0YDRgtCw0LrQvtCy0YHQutCw0Y8g0YPQuy4sIDYg0YHRgtGA0L7QtdC90LjQtSAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA1MDgy!5e0!3m2!1sru!2s!4v1715170845979!5m2!1sru!2s" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen 
+                  loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Location Map"
-                ></iframe>
+                  title="Location Map">
+                </iframe>
               </div>
               <div className="p-6">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
                   <div>
-                    <h3 className="font-bold text-xl mb-2">
-                      Учебный центр FORMA
-                    </h3>
+                    <h3 className="font-bold text-xl mb-2">Учебный центр FORMA</h3>
                     <p className="text-gray-600 mb-1">
                       г. Москва, ул. Спартаковская, 6, стр.1
                     </p>
                     <p className="text-gray-600 flex items-center">
-                      <Icon
-                        name="MapPin"
-                        className="h-4 w-4 mr-1 text-[#AE4A84]"
-                      />
+                      <Icon name="MapPin" className="h-4 w-4 mr-1 text-[#AE4A84]" /> 
                       Метро Бауманская (5 минут пешком)
                     </p>
                   </div>
@@ -288,68 +244,54 @@ const Index = () => {
               <div className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                      Имя
-                    </label>
-                    <input
-                      type="text"
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Имя</label>
+                    <input 
+                      type="text" 
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#AE4A84] focus:border-transparent"
                       placeholder="Ваше имя"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">
-                      Фамилия
-                    </label>
-                    <input
-                      type="text"
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Фамилия</label>
+                    <input 
+                      type="text" 
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#AE4A84] focus:border-transparent"
                       placeholder="Ваша фамилия"
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Телефон
-                  </label>
-                  <input
-                    type="tel"
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Телефон</label>
+                  <input 
+                    type="tel" 
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#AE4A84] focus:border-transparent"
                     placeholder="+7 (___) ___-__-__"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Email
-                  </label>
-                  <input
-                    type="email"
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <input 
+                    type="email" 
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#AE4A84] focus:border-transparent"
                     placeholder="example@email.com"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Специализация
-                  </label>
-                  <input
-                    type="text"
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Специализация</label>
+                  <input 
+                    type="text" 
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#AE4A84] focus:border-transparent"
                     placeholder="Косметолог, дерматолог, ..."
                   />
                 </div>
                 <div className="flex items-start mt-4">
-                  <input
-                    type="checkbox"
-                    id="consent"
+                  <input 
+                    type="checkbox" 
+                    id="consent" 
                     className="mt-1 focus:ring-[#AE4A84] h-4 w-4 text-[#AE4A84] border-gray-300 rounded"
                   />
-                  <label
-                    htmlFor="consent"
-                    className="ml-2 block text-sm text-gray-600"
-                  >
-                    Я согласен с обработкой персональных данных и получением
-                    информационных материалов
+                  <label htmlFor="consent" className="ml-2 block text-sm text-gray-600">
+                    Я согласен с обработкой персональных данных и получением информационных материалов
                   </label>
                 </div>
                 <div className="text-center mt-6">
@@ -357,13 +299,7 @@ const Index = () => {
                     Зарегистрироваться
                   </Button>
                   <p className="mt-4 text-gray-600 text-sm">
-                    Или позвоните нам для регистрации:{" "}
-                    <a
-                      href="tel:89223060673"
-                      className="font-bold text-[#AE4A84]"
-                    >
-                      8 (922) 306-06-73
-                    </a>
+                    Или позвоните нам для регистрации: <a href="tel:89223060673" className="font-bold text-[#AE4A84]">8 (922) 306-06-73</a>
                   </p>
                 </div>
               </div>
@@ -377,42 +313,27 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <img
-                src="/forma-logo-white.png"
-                alt="FORMA Logo"
-                className="h-8"
+              <img 
+                src="/forma-logo-white.png" 
+                alt="FORMA Logo" 
+                className="h-8" 
                 onError={(e) => {
-                  e.currentTarget.src =
-                    "https://via.placeholder.com/120x40?text=FORMA&bg=2A2A2A&fg=FFFFFF";
+                  e.currentTarget.src = "https://via.placeholder.com/120x40?text=FORMA&bg=2A2A2A&fg=FFFFFF";
                 }}
               />
-              <p className="text-sm text-gray-400 mt-1">
-                © 2024 FORMA. Все права защищены.
-              </p>
+              <p className="text-sm text-gray-400 mt-1">© 2024 FORMA. Все права защищены.</p>
             </div>
             <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Icon name="Instagram" className="h-5 w-5" />
               </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Icon name="Facebook" className="h-5 w-5" />
               </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Icon name="Mail" className="h-5 w-5" />
               </a>
-              <a
-                href="tel:89223060673"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
+              <a href="tel:89223060673" className="text-gray-400 hover:text-white transition-colors">
                 <Icon name="Phone" className="h-5 w-5" />
               </a>
             </div>
