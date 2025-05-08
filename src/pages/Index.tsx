@@ -257,7 +257,7 @@ const Index = () => {
                   </div>
                   <div className="mt-4 md:mt-0">
                     <a
-                    href="https://yandex.ru/maps/-/CHr8QCOi"
+                    href="https://yandex.com/maps/-/CHr8YJi1"
                     target="_blank"
                     rel="noopener noreferrer"
                     >
