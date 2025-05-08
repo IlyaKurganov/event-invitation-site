@@ -317,15 +317,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <img
-                src="/forma-logo-white.png"
-                alt="FORMA Logo"
-                className="h-8"
-                onError={(e) => {
-                  e.currentTarget.src =
-                    "https://via.placeholder.com/120x40?text=FORMA&bg=2A2A2A&fg=FFFFFF";
-                }}
-              />
+             
               <p className="text-sm text-gray-400 mt-1">
                 © 2025 FORMA. Все права защищены.
               </p>
