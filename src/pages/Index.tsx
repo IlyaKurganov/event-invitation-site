@@ -32,7 +32,7 @@ const Index = () => {
                 className="h-16 md:h-20"
               />
             </div>
-            <h1 className="font-playfair text-3xl md:text-5xl font-bold text-[#2A2A2A] mb-6">
+            <h1 className="font-inter text-3xl md:text-5xl font-bold text-[#2A2A2A] mb-6">
               MiraLine: алгоритмы гибридных протоколов
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
