@@ -11,11 +11,7 @@ const Index = () => {
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center">
-            <img
-              src="https://cdn.poehali.dev/files/1707391a-3408-4ae6-b6f8-2b8e4d783ed0.svg"
-              alt="FORMA Logo"
-              className="h-12 mr-2"
-            />
+            {/* Удалил логотип из шапки */}
           </div>
           <div>
             <Button className="bg-[#AE4A84] hover:bg-[#94366E] text-white">
