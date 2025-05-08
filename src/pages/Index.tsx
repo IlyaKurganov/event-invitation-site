@@ -31,10 +31,10 @@ const Index = () => {
               />
             </div>
             <h1 className="font-playfair text-3xl md:text-5xl font-bold text-[#2A2A2A] mb-6">
-              MiraLine: алгоритмы гибридных протоколов
+              Приглашаем на авторский семинар с Еленой Александровной Разумовской!
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
-              в зависимости от анатомических и возрастных особенностей лица
+              <strong>Тема семинара:</strong> MiraLine: алгоритмы гибридных протоколов в зависимости от анатомических и возрастных особенностей лица
             </p>
             <div className="bg-white rounded-xl shadow-md p-6 mb-8">
               <div className="flex flex-col md:flex-row justify-around items-center text-center gap-4">
