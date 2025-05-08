@@ -11,12 +11,10 @@ const Index = () => {
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center">
-            {/* Удалил логотип из шапки */}
+
           </div>
           <div>
-            <Button className="bg-[#AE4A84] hover:bg-[#94366E] text-white">
-              Записаться
-            </Button>
+            
           </div>
         </div>
       </header>
@@ -68,7 +66,9 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <Button className="bg-[#AE4A84] hover:bg-[#94366E] text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all">
+            <Button 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfmM8QOmYsHjFoe39n5ZXhNHYmb0PxC9VEMJkp7Vf1Vpzduig/viewform"
+              className="bg-[#AE4A84] hover:bg-[#94366E] text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all">
               Зарегистрироваться на семинар
             </Button>
           </div>
@@ -280,7 +280,9 @@ const Index = () => {
               </div>
 
               <div className="space-y-6">
-                <Button className="w-full md:w-2/3 mx-auto bg-[#AE4A84] hover:bg-[#94366E] text-white py-6 text-lg shadow-lg hover:shadow-xl transition-all">
+                <Button 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfmM8QOmYsHjFoe39n5ZXhNHYmb0PxC9VEMJkp7Vf1Vpzduig/viewform"
+                  className="w-full md:w-2/3 mx-auto bg-[#AE4A84] hover:bg-[#94366E] text-white py-6 text-lg shadow-lg hover:shadow-xl transition-all">
                   Записаться на семинар
                 </Button>
 
@@ -314,34 +316,8 @@ const Index = () => {
                 }}
               />
               <p className="text-sm text-gray-400 mt-1">
-                © 2024 FORMA. Все права защищены.
+                © 2025 FORMA. Все права защищены.
               </p>
-            </div>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Icon name="Instagram" className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Icon name="Facebook" className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Icon name="Mail" className="h-5 w-5" />
-              </a>
-              <a
-                href="tel:89223060673"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Icon name="Phone" className="h-5 w-5" />
-              </a>
             </div>
           </div>
         </div>
