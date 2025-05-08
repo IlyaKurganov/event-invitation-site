@@ -205,10 +205,17 @@ const Index = () => {
               <p className="text-gray-700 mb-4">
                 Узнайте подробную информацию о препаратах MiraLine
               </p>
+              
+              <a
+                    href="https://lk.beauty-forma.com/brendyi/?&brand=Lotos"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
               <Button className="bg-white hover:bg-gray-50 text-[#AE4A84] border border-[#AE4A84] hover:border-[#94366E] transition-all">
                 Узнать больше
                 <Icon name="ChevronRight" className="ml-2 h-4 w-4" />
               </Button>
+                </a>
             </div>
           </div>
         </div>
