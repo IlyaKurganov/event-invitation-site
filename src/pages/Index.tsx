@@ -67,7 +67,7 @@ const Index = () => {
               </div>
             </div>
             <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfmM8QOmYsHjFoe39n5ZXhNHYmb0PxC9VEMJkp7Vf1Vpzduig/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdaCEGvJrAwWfYwS7O_rHtfpNu1XO8vIQ90oGF2g2_pluQVTw/viewform"
             target="_blank"
             rel="noopener noreferrer"
             >
