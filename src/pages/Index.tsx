@@ -25,8 +25,8 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-6">
               <img
-                src="https://cdn.poehali.dev/files/1707391a-3408-4ae6-b6f8-2b8e4d783ed0.svg"
-                alt="FORMA Logo"
+                src="https://s3.iimg.su/s/21/gqhWxXOxrJV7WXTl0oP0i5pA68yv6WjLjzeOeS06.png"
+                alt="AGNI Logo"
                 className="h-16 md:h-20"
               />
             </div>
@@ -43,7 +43,7 @@ const Index = () => {
                     name="Calendar"
                     className="h-10 w-10 text-[#AE4A84] mb-2"
                   />
-                  <p className="text-gray-800 font-semibold">19 мая</p>
+                  <p className="text-gray-800 font-semibold">07 октября</p>
                   <p className="text-gray-600">10:30</p>
                 </div>
                 <div className="hidden md:block h-16 w-px bg-gray-200"></div>
@@ -62,7 +62,7 @@ const Index = () => {
                     className="h-10 w-10 text-[#AE4A84] mb-2"
                   />
                   <p className="text-gray-800 font-semibold">Учебный центр</p>
-                  <p className="text-gray-600">FORMA</p>
+                  <p className="text-gray-600">АГНИ</p>
                 </div>
               </div>
             </div>
@@ -229,7 +229,7 @@ const Index = () => {
               Место <span className="text-[#AE4A84]">проведения</span>
             </h2>
             <p className="text-center text-lg text-gray-600 mb-8">
-              Современный учебный центр FORMA в центре Москвы
+              Современный учебный центр АГНИ в центре Москвы
             </p>
 
             <div className="bg-[#F5F5F7] rounded-xl overflow-hidden shadow-md">
@@ -249,7 +249,7 @@ const Index = () => {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
                   <div>
                     <h3 className="font-bold text-xl mb-2">
-                      Учебный центр FORMA
+                      Учебный центр АГНИ
                     </h3>
                     <p className="text-gray-600 mb-1">
                       г. Москва, ул. Спартаковская, 6, стр.1
@@ -304,7 +304,7 @@ const Index = () => {
                 rel="noopener noreferrer"
                 >
                 <Button 
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfmM8QOmYsHjFoe39n5ZXhNHYmb0PxC9VEMJkp7Vf1Vpzduig/viewform"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdaCEGvJrAwWfYwS7O_rHtfpNu1XO8vIQ90oGF2g2_pluQVTw/viewform"
                   className="w-full md:w-2/3 mx-auto bg-[#AE4A84] hover:bg-[#94366E] text-white py-6 text-lg shadow-lg hover:shadow-xl transition-all">
                   Записаться на семинар
                 </Button>
@@ -332,7 +332,7 @@ const Index = () => {
             <div className="mb-4 md:mb-0">
              
               <p className="text-sm text-gray-400 mt-1">
-                © 2025 FORMA. Все права защищены.
+                © 2025 АГНИ. Все права защищены.
               </p>
             </div>
           </div>
